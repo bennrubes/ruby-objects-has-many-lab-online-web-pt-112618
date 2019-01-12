@@ -1,7 +1,12 @@
 class Author
   attr_accessor :name
-  @song 
+  def initialize
+    @songs = []
+  end
   
   def add_song(title)
-    song =
+    song = Song.new(title)
+    @songs << song
+    song.artist = self
+  end
 end
