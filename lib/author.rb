@@ -4,9 +4,12 @@ class Author
     @posts = []
   end
   
-  def add_post(title)
-    post = Song.new(title)
-    @songs << song
-    song.artist = self
+  def add_new_post(title)
+    new_post = Song.new(title)
+    @posts << new_post
+    new_post.author = self
   end
+  
+  def posts
+    @posts
 end
