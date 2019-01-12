@@ -16,7 +16,7 @@ class Artist
     song.artist = self
   end
   
-  def songs
+  def self.songs
     @songs
   end
   
